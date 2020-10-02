@@ -69,7 +69,8 @@ class CommandArgs(
 
     val all: List<String>
         get() = Collections.unmodifiableList(
-            args.stream().map(SingleArg::value)
+            args.stream()
+                .map(SingleArg::value)
                 .collect(Collectors.toList())
         )
 

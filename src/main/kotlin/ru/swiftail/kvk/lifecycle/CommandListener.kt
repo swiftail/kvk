@@ -41,7 +41,7 @@ class CommandListener(
     }
 
     fun run() {
-        messageEvents.addEventListener(::handleMessage)
+        messageEvents.addEventListener(this::handleMessage)
         logger.debug { "CommandListener is launched" }
     }
 
