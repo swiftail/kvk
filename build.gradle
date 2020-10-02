@@ -1,7 +1,7 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-    id "org.jetbrains.kotlin.kapt" version '1.4.10'
-    id "net.ltgt.apt" version "0.21"
+//    id "org.jetbrains.kotlin.kapt" version '1.4.10'
+//    id "net.ltgt.apt" version "0.21"
 
     id 'java-library'
     id 'maven-publish'
@@ -31,7 +31,7 @@ dependencies {
     api "com.github.swiftail:vk-java-sdk:$vkSdkVersion"
 
     // Micronaut dependency injection
-    kapt "io.micronaut:micronaut-inject-java:2.0.0"
+//    kapt "io.micronaut:micronaut-inject-java:2.0.0"
     api "io.micronaut:micronaut-inject:2.0.0"
 
     // Logging
