@@ -3,8 +3,9 @@ plugins {
     id "org.jetbrains.kotlin.kapt" version "$kotlin_version"
     id "net.ltgt.apt" version "0.21"
     id 'maven'
+    id 'java-library'
+    id 'java'
 }
-apply plugin: 'java'
 
 group 'ru.swiftail'
 version '1.0'
