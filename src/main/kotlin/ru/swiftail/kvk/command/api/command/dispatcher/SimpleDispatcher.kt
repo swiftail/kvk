@@ -211,7 +211,7 @@ class SimpleDispatcher
     override suspend fun process(source: CommandSource, commandLine: String) {
         val argSplit = commandLine.split(Regex(" +"), 2).toTypedArray()
         val cmdOptional = get(argSplit[0], source)
-        if (cmdOptional.isEmpty) {
+        if (!cmdOptional.isPresent) {
             throw CommandNotFoundException(argSplit[0])
         }
         val arguments = if (argSplit.size > 1) argSplit[1] else ""
