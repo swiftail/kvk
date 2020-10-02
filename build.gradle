@@ -46,7 +46,7 @@ dependencies {
     // .env file support
     implementation 'io.github.cdimascio:java-dotenv:5.2.1'
     // Color resolving
-    implementation 'org.beryx:awt-color-factory:1.0.1'
+    implementation 'org.beryx:awt-color-factory:1.0.2'
 }
 
 compileKotlin {
