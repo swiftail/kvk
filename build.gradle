@@ -44,7 +44,7 @@ dependencies {
     // Logging implementation
     implementation 'ch.qos.logback:logback-classic:1.2.3'
     // .env file support
-    implementation 'io.github.cdimascio:java-dotenv:5.2.1'
+    implementation 'io.github.cdimascio:java-dotenv:5.3.1'
     // Color resolving
     implementation 'org.beryx:awt-color-factory:1.0.1'
 }
