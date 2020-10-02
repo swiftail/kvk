@@ -250,7 +250,7 @@ class SimpleDispatcher
         val it = filterCommands(source).iterator()
         while (it.hasNext()) {
             val mappingOpt = get(it.next(), source)
-            if (mappingOpt.isEmpty) {
+            if (!mappingOpt.isPresent) {
                 continue
             }
             val mapping = mappingOpt.get()

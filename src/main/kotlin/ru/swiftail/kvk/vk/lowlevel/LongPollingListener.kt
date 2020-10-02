@@ -22,7 +22,7 @@ class LongPollingListener(
     private val actor: GroupActor,
     @Named("vk_group_id") private val groupId: Integer
 ) {
-    private val handlers = Multimaps.newSetMultimap<String, JsonListener>(hashMapOf(), ::hashSetOf)
+    private val handlers = Multimaps.newSetMultimap<String, JsonListener>(hashMapOf()) { hashSetOf() }
     private lateinit var server: String
     private lateinit var key: String
     private var ts = 0
