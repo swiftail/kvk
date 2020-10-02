@@ -2,9 +2,9 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version "$kotlin_version"
     id "org.jetbrains.kotlin.kapt" version "$kotlin_version"
     id "net.ltgt.apt" version "0.21"
-    id 'maven'
+
     id 'java-library'
-    id 'java'
+    id 'maven-publish'
 }
 
 group 'ru.swiftail'
@@ -32,8 +32,7 @@ dependencies {
     api 'io.github.microutils:kotlin-logging:1.8.3'
 
     // Guava
-    api "com.google.guava:guava:29.0-jre"
-
+    implementation "com.google.guava:guava:29.0-jre"
     // Reflections, used internally
     implementation group: 'org.reflections', name: 'reflections', version: '0.9.12'
     // Logging implementation
@@ -51,4 +50,12 @@ compileKotlin {
 sourceSets {
     main.kotlin.srcDirs =  main.java.srcDirs = ['src/main/kotlin']
     main.resources.srcDirs = ['src/main/resources']
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
