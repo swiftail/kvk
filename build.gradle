@@ -38,7 +38,7 @@ dependencies {
     api 'io.github.microutils:kotlin-logging:1.8.3'
 
     // Guava
-    implementation "com.google.guava:guava:29.0-jre"
+    implementation "com.google.guava:guava:30.0-jre"
     // Reflections, used internally
     implementation group: 'org.reflections', name: 'reflections', version: '0.9.12'
     // Logging implementation
