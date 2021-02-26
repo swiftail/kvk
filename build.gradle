@@ -1,6 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-    id "org.jetbrains.kotlin.kapt" version '1.4.10'
+    id "org.jetbrains.kotlin.kapt" version '1.4.31'
     id "net.ltgt.apt" version "0.21"
 
     id 'java-library'
