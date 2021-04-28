@@ -31,7 +31,7 @@ dependencies {
     api "com.github.swiftail:vk-java-sdk:$vkSdkVersion"
 
     // Micronaut dependency injection
-    kapt "io.micronaut:micronaut-inject-java:2.0.0"
+    kapt "io.micronaut:micronaut-inject-java:2.4.3"
     api "io.micronaut:micronaut-inject:2.0.0"
 
     // Logging
