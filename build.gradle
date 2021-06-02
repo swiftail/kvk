@@ -35,7 +35,7 @@ dependencies {
     api "io.micronaut:micronaut-inject:2.0.0"
 
     // Logging
-    api 'io.github.microutils:kotlin-logging:1.8.3'
+    api 'io.github.microutils:kotlin-logging:2.0.8'
 
     // Guava
     implementation "com.google.guava:guava:29.0-jre"
