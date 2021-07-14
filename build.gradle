@@ -17,7 +17,7 @@ repositories {
 }
 
 ext {
-    kotlinVersion = '1.4.10'
+    kotlinVersion = '1.5.21'
     vkSdkVersion = 'a0f4803d86'
 }
 
